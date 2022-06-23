@@ -1,0 +1,35 @@
+% Inbuilt themes in beamer
+\documentclass{beamer}
+
+% Theme choice:
+\usetheme{CambridgeUS}
+
+% Title page details: 
+\title{Assignment 8}
+\subtitle{\Large AI1110: Probability and Random Variables \\ \large Indian Institute of Technology Hyderabad}
+\author{Rudransh Mishra \\ \normalsize AI21BTECH11025 \\ \vspace*{20pt} \normalsize  19 June 2022 \\ \vspace*{20pt} PROBABILITY, RANDOM VARIABLES, AND STOCHASTIC PROCESSES\\ \normalsize Athanasios Papoulis}
+\date{\today}
+\logo{\large \LaTeX{}}
+
+
+\begin{document}
+
+% Title page frame
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+% Remove logo from the next slides
+\logo{}
+
+
+% Example frame
+\begin{frame}{Example 15.2}
+Consider a population that is able to produce new offspring of like kind. For each member let $p_k, k = 0, 1, 2,$ ... represent the probability of creating k new members. The direct descendents of the nth generation form the (n + 1 )st generation. The members of each generation are independent of each other. Suppose $X_n$ represents the size of the nth generation. It is clear that $X_n$ depends only on $X_n-1$ since $X_n = \sum_{i=1}^{x_n-1}Y_i$, where $Y_i$ represents the number of offspring of the i th member of the (n - 1) generation, and the manner in which the value of $X_n-1$ was reached is of no consequence. Thus $X_n$ represents a Markov chain.
+\end{frame}
+
+\begin{frame}{Example(cont.)}
+Nuclear chain reactions, survival of family surnames, gene mutations, and waiting lines in a queueing system are all examples of branching processes. In a nuclear chain reaction, a particle such as a neutron scores a hit with probability p, creating m new particles, and $q = 1-p$ represents the probability that it remains inactive with no descendants. In that case, the only possible number of descendants is zero and m with probabilities q and p. If P is close to one, the number of particles is likely to increase indefinitely, leading to an explosion, whereas if P is close to zero the process may never start.
+\end{frame}
+\end{document}
+
